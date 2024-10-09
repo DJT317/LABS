@@ -136,6 +136,18 @@
     </head>
     <body>
         <p>This is a paragraph with the font family set to Arial,</p>
+
+        <head>
+           
+            <style>
+                .custom-font {
+                    font-family: "Times New Roman", serif; /* Set font family with fallback */
+                }
+            </style>
+        </head>
+        <body>
+            <p class="custom-font">This is the first paragraph with the TIMES font.</p>
+            <p class="custom-font">This is the second paragraph with new font.</p>
     </body>
     </html>
 
