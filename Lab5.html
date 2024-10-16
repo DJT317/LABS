@@ -3,53 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Divs and Styles</title>
     <style>
         .box {
             height: 200px;
             width: 300px;
+            background-color: lightgrey; 
         }
 
         .responsive-box {
-            width: 50vw;
-            height: 50vh;
+            width: 50vw; 
+            height: 50vh; 
+            background-color: lightblue; 
         }
 
         .padded-text {
             padding: 20px;
+            background-color: lightgreen; 
         }
 
         .custom-padding {
-            padding: 10px 20px;
+            padding: 10px 20px; 
+            background-color: lightcoral;
         }
 
         .border-box {
             border: 2px solid black;
+            padding: 10px; 
         }
 
         .rounded-border {
             border: 3px dotted red;
             border-radius: 15px;
+            padding: 10px; 
         }
 
         .margin-text {
             margin: 30px;
+            background-color: lightyellow;
         }
 
         .custom-margin {
-            margin: 20px 40px;
+            margin: 20px 40px; 
+            background-color: lightpink; 
         }
 
         .inline-element {
             display: inline;
+            background-color: lightgrey; 
+            padding: 5px;
+            margin: 5px; 
         }
 
         .block-element {
             display: block;
+            background-color: lavender; 
+            margin: 5px; 
         }
 
         .inline-block-element {
             display: inline-block;
+            background-color: lightsteelblue; 
+            padding: 5px; 
+            margin: 5px; 
         }
 
         .hidden-element {
@@ -58,15 +74,19 @@
 
         .visible-element {
             visibility: visible;
+            background-color: lightgoldenrodyellow; 
         }
 
         .invisible-element {
             visibility: hidden;
+            background-color: lightgrey; 
         }
 
         .transparent-box {
             background-color: blue;
             opacity: 0.5;
+            height: 100px;
+            width: 100px;
         }
     </style>
 </head>
@@ -74,31 +94,29 @@
 
     <div class="box"></div>
     <div class="responsive-box"></div>
-    <p class="padded-text"> padded text paragraph.</p>
-    <div class="custom-padding"> custom padding.</div>
-    <div class="border-box"> div wth border.</div>
-    <div class="rounded-border">rounded border.</div>
-    <p class="margin-text">paragraph has margin.</p>
-    <div class="custom-margin"> custom margin.</div>
+    <p class="padded-text">This is padded text.</p>
+    <div class="custom-padding">This is a div with custom padding.</div>
+    <div class="border-box">This is a bordered box.</div>
+    <div class="rounded-border">This is a rounded border box.</div>
+    <p class="margin-text">This paragraph has a margin.</p>
+    <div class="custom-margin">This div has custom margin.</div>
 
-    <div class="inline-element">Element 1</div>
-    <div class="inline-element">Element 2</div>
-    <div class="inline-element"> Element 3</div>
+    <div class="inline-element">Inline 1</div>
+    <div class="inline-element">Inline 2</div>
+    <div class="inline-element">Inline 3</div>
 
-    <a href="#" class="block-element">Block Element 1</a>
-    <a href="#" class="block-element">Block Element 2</a>
-    <a href="#" class="block-element">Block Element 3</a>
+    <a href="#" class="block-element">Block Link 1</a>
+    <a href="#" class="block-element">Block Link 2</a>
+    <a href="#" class="block-element">Block Link 3</a>
 
-    <div class="inline-block-element">Inline Block Element 1</div>
-    <div class="inline-block-element">Inline Block Element 2</div>
-    <div class="inline-block-element">Inline Block Element 3</div>
+    <div class="inline-block-element">Inline Block 1</div>
+    <div class="inline-block-element">Inline Block 2</div>
+    <div class="inline-block-element">Inline Block 3</div>
 
     <div class="hidden-element">This element is hidden.</div>
     <div class="visible-element">This element is visible.</div>
     <div class="invisible-element">This element is invisible.</div>
-    <div class="transparent-box">This box is transparent.</div>
+    <div class="transparent-box"></div>
 
 </body>
 </html>
-
-  
