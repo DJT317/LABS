@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning and Flexbox Example</title>
+    <style>
+        /* Q 1 */
+        .static-box {
+            position: static;
+            background-color: lightgray;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* Q 2 */
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* Q 3 */
+        .container {
+            position: relative;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            background-color: lightgreen;
+            padding: 20px;
+        }
+
+        /* Q 4 */
+        .fixed-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: lightcoral;
+            padding: 20px;
+        }
+
+        /* Q 5 */
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background-color: lightyellow;
+            padding: 20px;
+        }
+
+        /* Q 6 */
+        .background-image {
+            background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            height: 200px;
+            margin: 10px;
+        }
+
+        /* Q 7 */
+        .background-image-repeat {
+            background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+            background-repeat: repeat;
+            height: 200px;
+            margin: 10px;
+        }
+
+        /* Q 8 */
+        .box1 {
+            background-color: rgba(255, 0, 0, 0.5);
+            z-index: 1;
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box2 {
+            background-color: rgba(0, 255, 0, 0.5);
+            z-index: 2;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin-left: -50px; /* Overlapping */
+        }
+
+        /* Q 9 */
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Q 10 */
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Q 11 */
+        .flex-space-evenly {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        /* Q 12 */
+        .flex-wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Q 13 */
+        .flex-center {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Q 14 */
+        .flex-content-space {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 200px; /* Adjust as needed */
+        }
+
+        /* Q 15 */
+        .flex-grow {
+            display: flex;
+        }
+
+        .flex-grow > div {
+            padding: 20px;
+            background-color: lightblue;
+            margin: 10px;
+        }
+
+        .flex-grow > div:nth-child(2) {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Q 1 -->
+    <div class="static-box">Static Box</div>
+    
+    <!-- Q 2 -->
+    <div class="relative-box">Relative Box</div>
+    
+    <!-- Q 3 -->
+    <div class="container">
+        <div class="absolute-box">Absolute Box</div>
+    </div>
+    
+    <!-- Q 4 -->
+    <div class="fixed-box">Fixed Box</div>
+    
+    <!-- Q 5 -->
+    <div class="sticky-box">Sticky Box</div>
+    <div style="height: 1500px;">Scroll to see the sticky effect.</div>
+    
+    <!-- Q 6 -->
+    <div class="background-image"></div>
+    
+    <!-- Q 7 -->
+    <div class="background-image-repeat"></div>
+    
+    <!-- Q 8 -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    
+    <!-- Q 9 -->
+    <div class="flex-row">
+        <div>Child 1</div>
+        <div>Child 2</div>
+        <div>Child 3</div>
+    </div>
+    
+    <!-- Q 10 -->
+    <div class="flex-column">
+        <div>Child 1</div>
+        <div>Child 2</div>
+        <div>Child 3</div>
+    </div>
+    
+    <!-- Q 11 -->
+    <div class="flex-space-evenly">
+        <div>Child 1</div>
+        <div>Child 2</div>
+        <div>Child 3</div>
+    </div>
+    
+    <!-- Q 12 -->
+    <div class="flex-wrap">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+    </div>
+    
+    <!-- Q 13 -->
+    <div class="flex-center" style="height: 200px;">
+        <div style="height: 100px;">Child 1</div>
+        <div style="height: 50px;">Child 2</div>
+        <div style="height: 150px;">Child 3</div>
+    </div>
+    
+    <!-- Q 14 -->
+    <div class="flex-content-space">
+        <div>Line 1</div>
+        <div>Line 2</div>
+        <div>Line 3</div>
+    </div>
+    
+    <!-- Q 15 -->
+    <div class="flex-grow">
+        <div>Child 1</div>
+        <div>Child 2</div>
+        <div>Child 3</div>
+    </div>
+</body>
+</html>
