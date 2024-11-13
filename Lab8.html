@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercises</title>
+</head>
+<body>
+    <script>
+        // Q1: Declare a variable to store your name and a variable to store your age. Display both variables using console.log().
+        let name = "John Doe";
+        let age = 25;
+        console.log("Q1:", name);
+        console.log("Q1:", age);
+
+        // Q2: Create variables of different data types (string, number, boolean, undefined) and display their values using console.log().
+        let str = "Hello, World!";
+       async (params) => {
+         let num = 42;
+       }
+        let isActive = true;
+        let unknownValue;
+        console.log("Q2:", str);
+        console.log("Q2:", num);
+        console.log("Q2:", isActive);
+        console.log("Q2:", unknownValue); // This will print 'undefined'
+
+        // Q3: Write a program where a RollNumber = 15. Check if the RollNumber is greater than 10, print "The RollNumber is greater than 10” using console.log()
+        let rollNumber = 15;
+        if (rollNumber > 10) {
+            console.log("Q3: The RollNumber is greater than 10");
+        }
+
+        // Q4: Create a variable isMember (boolean) and set its value as true. Check if it is true, print "Member discount applied." using console.log()
+        let isMember = true;
+        if (isMember) {
+            console.log("Q4: Member discount applied.");
+        }
+
+        // Q5: Write a program with variable startValue and set it to 50, check if the given startValue is positive, negative, or zero and display an appropriate message.
+        let startValue = 50;
+        if (startValue > 0) {
+            console.log("Q5: The number is positive.");
+        } else if (startValue < 0) {
+            console.log("Q5: The number is negative.");
+        } else {
+            console.log("Q5: The number is zero.");
+        }
+
+        // Q6: Declare two variables a and b and assign any values. Compare these values using all comparison operators (==, ===, !=, >, <, >=, <=) and log the results.
+        let a = 5;
+        let b = 10;
+        console.log("Q6: a == b ->", a == b);   // Equal to
+        console.log("Q6: a === b ->", a === b); // Strict equal (type and value)
+        console.log("Q6: a != b ->", a != b);   // Not equal to
+        console.log("Q6: a > b ->", a > b);     // Greater than
+        console.log("Q6: a < b ->", a < b);     // Less than
+        console.log("Q6: a >= b ->", a >= b);   // Greater than or equal to
+        console.log("Q6: a <= b ->", a <= b);   // Less than or equal to
+
+        // Q7: Create three variables to store your first name, last name, and age. Concatenate these variables to display "Hello, [First Name] [Last Name], you are [age] years old."
+        let firstName = "John";
+        let lastName = "Doe";
+        let agePerson = 25;
+        console.log("Q7:", "Hello, " + firstName + " " + lastName + ", you are " + agePerson + " years old.");
+        console.log("Q7:", `Hello, ${firstName} ${lastName}, you are ${agePerson} years old.`); // Using template literals
+
+        // Q8: Create a program with variable num = 50 and check if that number is both positive and less than 100. If true, print "The number is within range."
+        let num = 50;
+        if (num > 0 && num < 100) {
+            console.log("Q8: The number is within range.");
+        }
+
+        // Q9: Create variables hasCar, hasLicense, and hasInsurance and set their value as true. Check if all three are true, print "You can drive legally." If any of them is false, print "Check your driving eligibility."
+        let hasCar = true;
+        let hasLicense = true;
+        let hasInsurance = true;
+        if (hasCar && hasLicense && hasInsurance) {
+            console.log("Q9: You can drive legally.");
+        } else {
+            console.log("Q9: Check your driving eligibility.");
+        }
+
+        // Q10: Write a program with variable num = 21, check if number is even or odd. If it’s even, print "The number is even." Otherwise, print "The number is odd."
+        let number = 21;
+        if (number % 2 === 0) {
+            console.log("Q10: The number is even.");
+        } else {
+            console.log("Q10: The number is odd.");
+        }
+
+        // Q11: Create a variable score and set it as 85. If the score is greater than or equal to 90, print "Grade A." If it's between 80 and 89, print "Grade B." Otherwise, print "Grade C."
+        let score = 85;
+        if (score >= 90) {
+            console.log("Q11: Grade A");
+        } else if (score >= 80 && score < 90) {
+            console.log("Q11: Grade B");
+        } else {
+            console.log("Q11: Grade C");
+        }
+    </script>
+</body>
+</html>
